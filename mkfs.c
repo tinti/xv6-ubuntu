@@ -11,6 +11,9 @@
 #include "stat.h"
 #include "param.h"
 
+#define O_CREAT		   0100	/* not fcntl */
+#define O_TRUNC		  01000	/* not fcntl */
+
 int nblocks = 985;
 int nlog = LOGSIZE;
 int ninodes = 200;
